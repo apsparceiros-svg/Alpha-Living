@@ -40,7 +40,19 @@
   padding: 20px;
 }
 .modal.show .modal-content { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-.close { position: absolute; right: 15px; top: 10px; font-size: 28px; cursor: pointer; }
+.close {
+  position: absolute;       /* já está absoluto */
+  top: 10px;                /* distância do topo */
+  right: 15px;              /* distância da direita */
+  font-size: 28px;          /* tamanho maior se quiser */
+  font-weight: bold;
+  color: #fff;              /* cor branca para aparecer sobre a imagem */
+  cursor: pointer;
+  z-index: 1000;            /* muito maior que a imagem do modal */
+  background: rgba(0,0,0,0.4); /* opcional: fundo semi-transparente */
+  padding: 5px 10px;        /* opcional: aumenta área clicável */
+  border-radius: 50%;       /* opcional: deixa circular */
+}
 .nav-arrow { position:absolute; top:50%; transform:translateY(-50%); font-size:28px; color:#fff; background:rgba(0,0,0,0.5); padding:6px 12px; border-radius:50%; cursor:pointer; }
 .nav-left{ left:10px; } .nav-right{ right:10px; }
 .miniaturas{ display:flex; gap:6px; margin-top:10px; flex-wrap:wrap; justify-content:center; }
