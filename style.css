@@ -1,12 +1,12 @@
 /* ======== GALERIA GRID ======== */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 10px;
 }
 .galeria img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
